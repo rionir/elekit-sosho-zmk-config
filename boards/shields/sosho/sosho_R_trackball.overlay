@@ -45,6 +45,12 @@ https://zmk.dev/docs/keymaps/input-processors
 &glidepoint_split_listener {
     status = "okay";
 	//input-processors = <&zip_xy_scaler 2 1>;
+
+	//Layer3(Nav)が有効な間だけ、左手トラックパッドの動きを上下左右スクロールに変換する
+	scroller {
+		layers = <3>;
+		input-processors = <&zip_xy_to_scroll_mapper>;
+	};
 };
 
 &trackball_split { status = "okay"; };
