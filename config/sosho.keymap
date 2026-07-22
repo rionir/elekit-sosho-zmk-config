@@ -72,8 +72,8 @@ keymap {
     layer_1 {
         display-name = "Symbol";
         bindings = <
-            &kp ESC &trans &trans         &msc SCRL_UP   &trans          &trans     &trans &trans &kp LBRC   &kp RBRC &kp BSLH  &kp DEL
-            &trans  &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &trans     &trans &trans &trans     &kp SEMI &kp SQT   &trans
+            &kp ESC &trans &trans         &msc MOVE_Y(120) &trans        &trans     &trans &trans &kp LBRC   &kp RBRC &kp BSLH  &kp DEL
+            &trans  &trans &msc MOVE_X(-60) &msc MOVE_Y(-120) &msc MOVE_X(60) &trans   &trans &trans &trans     &kp SEMI &kp SQT   &trans
             &trans  &trans &trans &trans &trans &trans     &trans &trans &kp COMMA  &kp DOT  &kp SLASH &trans
             &trans  &trans        &kp LSHFT &trans         &trans &trans            &trans   &trans
         >;
