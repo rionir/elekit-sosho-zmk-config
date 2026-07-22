@@ -22,8 +22,8 @@
 
 //スクロールの調整
 &msc {
-    time-to-max-speed-ms = <0>;   // 即座に最大速度（加速なし）
-    acceleration-exponent = <0>;   // 加速なし
+    time-to-max-speed-ms = <300>;  // 300msかけて最大速度まで加速
+    acceleration-exponent = <1>;   // 加速アリ（1=線形／2で強め）
 };
 
 /{
@@ -72,8 +72,8 @@ keymap {
     layer_1 {
         display-name = "Symbol";
         bindings = <
-            &kp ESC &trans &trans &trans &trans &trans     &trans &trans &kp LBRC   &kp RBRC &kp BSLH  &kp DEL
-            &trans  &trans &trans &trans &trans &trans     &trans &trans &trans     &kp SEMI &kp SQT   &trans
+            &kp ESC &trans &trans         &msc SCRL_UP   &trans          &trans     &trans &trans &kp LBRC   &kp RBRC &kp BSLH  &kp DEL
+            &trans  &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &trans     &trans &trans &trans     &kp SEMI &kp SQT   &trans
             &trans  &trans &trans &trans &trans &trans     &trans &trans &kp COMMA  &kp DOT  &kp SLASH &trans
             &trans  &trans        &kp LSHFT &trans         &trans &trans            &trans   &trans
         >;
