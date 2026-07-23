@@ -80,7 +80,7 @@ keymap {
     layer_1 {
         display-name = "Symbol";
         bindings = <
-            &kp ESC &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R) &kp LC(T)     &trans &trans &kp LBRC   &kp RBRC &kp BSLH  &kp DEL
+            &kp ESC &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R) &kp LC(T)     &kp LC(Y) &trans &kp LBRC   &kp RBRC &kp BSLH  &kp DEL
             &trans  &kp LC(A) &kp LC(S) &kp LC(D) &kp LC(F) &kp LC(G)     &trans &trans &trans     &kp SEMI &kp SQT   &trans
             &trans  &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(B)     &trans &trans &kp COMMA  &kp DOT  &kp SLASH &trans
             &trans  &trans        &trans    &kp LSHFT      &trans &trans            &trans   &trans
