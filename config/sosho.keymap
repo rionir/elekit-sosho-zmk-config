@@ -26,6 +26,14 @@
     acceleration-exponent = <1>;   // 加速アリ（1=線形／2で強め）
 };
 
+//長押し（ホールド）判定までの時間。デフォルト200ms → 短く
+&lt {
+    tapping-term-ms = <150>;
+};
+&mt {
+    tapping-term-ms = <150>;
+};
+
 /{
     combos {
         compatible = "zmk,combos";
